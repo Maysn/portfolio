@@ -1,0 +1,39 @@
+@import '../styles//variables';
+
+
+.nav-links {
+    
+    & a {
+        position: relative;
+        color: $moov;
+        transition: color 200ms ease-in-out;
+
+        &:last-child  {
+            margin-right: 11px;
+        }
+        &:not(:last-child){
+            margin-right: 33px;
+        }
+
+        &::after {
+            content: "";
+            position: absolute;
+            display: block;
+            height: 5px;
+            right: 0;
+            left: 0;
+            bottom: -32px;
+            background: $pink;
+            opacity: 0;
+            transition: opacity 200ms ease-in-out;
+        }
+
+        &:hover {
+            color: $pink;
+           
+            &::after {
+               opacity: 1;
+            }
+        }
+    }
+}

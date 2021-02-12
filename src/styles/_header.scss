@@ -1,0 +1,59 @@
+.header{
+    border-bottom: 1px solid $gray;
+    
+    nav {
+        padding: 13px;
+    }
+
+    &__logo{
+
+        img{
+            height: 53px;
+        }
+    }
+
+    .overlay {
+        position: fixed;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        background-image: linear-gradient(to bottom left, rgba(26, 26, 28, 0),  rgba(111, 34, 50, .3));
+        
+        @keyframes fade-in {
+            from {
+                visibility: hidden;
+                opacity: 0;
+            }
+            1% {
+                visibility: visible;
+                opacity: 0;
+            }
+            to {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+        &.fade-in {
+            animation: fade-in 300ms ease-in-out forwards;
+        }
+
+        @keyframes fade-out {
+            from {
+                visibility: visible;
+                opacity: 1;
+            }
+            99% {
+                visibility: visible;
+                opacity: 0;
+            }
+            to {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+        &.fade-out {
+            animation: fade-out 300ms ease-in-out forwards;
+        }
+    }
+}
