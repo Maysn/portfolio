@@ -1,16 +1,7 @@
+@import '../styles/variables';
+
 .header{
     border-bottom: 1px solid $gray;
-    
-    nav {
-        padding: 13px;
-    }
-
-    &__logo{
-
-        img{
-            height: 53px;
-        }
-    }
 
     .overlay {
         position: fixed;
@@ -20,40 +11,40 @@
         left: 0;
         background-image: linear-gradient(to bottom left, rgba(26, 26, 28, 0),  rgba(111, 34, 50, .3));
         
-        @keyframes fade-in {
-            from {
-                visibility: hidden;
-                opacity: 0;
-            }
-            1% {
-                visibility: visible;
-                opacity: 0;
-            }
-            to {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-        &.fade-in {
-            animation: fade-in 300ms ease-in-out forwards;
-        }
+    }
+    
+    nav {
+        position: relative;
+        background-color: $blackBg;
+        padding: 1.0625rem 1.5rem;
+    }
 
-        @keyframes fade-out {
-            from {
-                visibility: visible;
-                opacity: 1;
-            }
-            99% {
-                visibility: visible;
-                opacity: 0;
-            }
-            to {
-                visibility: hidden;
-                opacity: 0;
-            }
+    &__logo{
+        
+        a {
+            color: $pink;
         }
-        &.fade-out {
-            animation: fade-out 300ms ease-in-out forwards;
+        // img{
+        //     height: 53px;
+        // }
+    }
+    
+    &__mobmenu {
+        position: absolute;
+        width: calc(100% - 5rem);
+        left: 50%;
+        transform: translateX(-50%);
+        margin-top: 1.5rem;
+        background-color: $white;
+        padding: 1.625rem;
+        border-radius: 5px;
+        
+        a {
+            display: block;
+            padding: 0.625rem;
+            text-align: center;
+            color: $moov;
         }
     }
+    
 }
