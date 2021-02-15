@@ -8,13 +8,8 @@ function Header({open, setOpen, loading}) {
         <header className="header">
         <div className={loading? "overlay has-fade hide-for-desktop" : `overlay hide-for-desktop ${open? "fade-in" : "fade-out"}`}></div>
 
-        <nav className="flex flex-js-sb flex-ai-c">
-          <div className="header__logo">
-            <a href="/">
-              {/* <img src={zed} alt="Maysn" /> */}
-              Maysn
-            </a>
-          </div>
+        <nav className="flex flex-jc-sb flex-ai-c flex-jc-c">
+          
           <Hamburger open={open} setOpen={setOpen} loading={loading}/>
           <NavLinks open={open} setOpen={setOpen} loading={loading} />
           </nav>

@@ -1,7 +1,7 @@
 @import '../styles/variables';
 
 .header{
-    border-bottom: 1px solid $gray;
+    // border-bottom: 1px solid $gray;
 
     .overlay {
         position: fixed;
@@ -9,7 +9,7 @@
         right: 0;
         bottom: 0;
         left: 0;
-        background-image: linear-gradient(to bottom left, rgba(26, 26, 28, 0),  rgba(111, 34, 50, .3));
+        background-image: linear-gradient(to bottom left, rgba(26, 26, 28, 0),  rgba(26, 26, 28, .3));
         
     }
     
@@ -19,15 +19,6 @@
         padding: 1.0625rem 1.5rem;
     }
 
-    &__logo{
-        
-        a {
-            color: $pink;
-        }
-        // img{
-        //     height: 53px;
-        // }
-    }
     
     &__mobmenu {
         position: absolute;
@@ -35,15 +26,18 @@
         left: 50%;
         transform: translateX(-50%);
         margin-top: 1.5rem;
-        background-color: $white;
+        // background-color: $blackBg;
         padding: 1.625rem;
         border-radius: 5px;
         
         a {
             display: block;
-            padding: 0.625rem;
+            padding: 1.625rem;
+            font-weight: 700;
             text-align: center;
-            color: $moov;
+            font-size: 1.3rem;
+            font-family: 'Gloria Hallelujah', cursive;;
+            color: $pink;
         }
     }
     

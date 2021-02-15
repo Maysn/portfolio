@@ -4,7 +4,7 @@ function Hamburger({open, setOpen, loading}) {
   return (
     <div onClick={() => setOpen(!open)}  className={loading? "hamburger hide-for-desktop" : `hamburger hide-for-desktop ${open? "open" : "close"}`}>
       <a href="#" >
-      <span style={{color:"white"}}></span>
+      <span></span>
       <span></span>
       <span></span>
     </a>

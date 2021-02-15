@@ -5,12 +5,11 @@
     
     & a {
         position: relative;
-        color: $moov;
+        color: $pink;
         transition: color 200ms ease-in-out;
-
-        &:last-child  {
-            margin-right: 11px;
-        }
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 1.3rem;
+        
         &:not(:last-child){
             margin-right: 33px;
         }
@@ -23,13 +22,13 @@
             right: 0;
             left: 0;
             bottom: -19px;
-            background: $pink;
+            background: $gray;
             opacity: 0;
             transition: opacity 200ms ease-in-out;
         }
 
         &:hover {
-            color: $pink;
+            color: $gray;
            
             &::after {
                opacity: 1;
