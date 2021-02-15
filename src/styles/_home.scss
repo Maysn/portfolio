@@ -1,0 +1,79 @@
+.home {
+    display: flex;
+    align-items: center;
+
+
+    //flashing light logo
+    &__light {
+        background-size: contain;
+        background-position: top;
+        background-repeat: no-repeat;
+        height: 73vh;
+        width: 100vw;
+        animation: blinking 1.7s cubic-bezier(.5, 0, 1, 2) 3s infinite alternate;
+        
+        @include breakpoint-up(large){
+            flex: 1;
+            height: 99vh;
+            width: 53vw;
+            background-attachment: fixed;
+            background-position: left;
+
+        }
+
+        &.delay-light {
+            visibility: hidden;
+            animation-delay: 1s;
+        }
+
+        
+
+        @keyframes blinking {
+            0% {
+                visibility: visible;
+                opacity: 1;
+            }
+            15% {
+                visibility: visible;
+                opacity: 0.5;
+            }
+            40% {
+                visibility: hidden;
+                opacity: 0;
+            }
+            55% {
+                visibility: visible;
+                opacity: 0.5;
+            }
+            100% {
+                visibility: hidden;
+                opacity: 0;
+            }
+        }
+    }
+
+    //home introduction
+
+    &__introduction {
+        @include breakpoint-up(large){
+            position: relative;
+            font-family: 'Gloria Hallelujah', cursive;
+            font-size: 1.9rem;
+            color: $pink;
+            line-height: 1.5;
+            flex: .7 1;
+            padding: 2.1rem;
+            margin: 1.3rem;
+            text-align: start;
+
+            > p {
+                &::before{
+                    content: open-quote;
+                }
+                &::after{
+                    content: close-quote;
+                }
+            }
+        }
+    }
+}

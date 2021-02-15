@@ -26,49 +26,8 @@ body{
     margin-right: auto;    
     margin-left: auto;
 
-    
-
-    &__light {
-        background-size: contain;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 57vh;
-        // animation: blinking 1500ms ease-in-out 7s infinite alternate forwards ;
-        animation: blinking 1.7s cubic-bezier(.5, 0, 1, 2) 3s infinite alternate;
-        
-        @include breakpoint-up(medium){
-            height: 83vh;
-        }
-
-        &.delay-light {
-            visibility: hidden;
-            animation-delay: 1s;
-        }
-    }
-
-    @keyframes blinking {
-        0% {
-            visibility: visible;
-            opacity: 1;
-        }
-        15% {
-            visibility: visible;
-            opacity: 0.5;
-        }
-        40% {
-            visibility: hidden;
-            opacity: 0;
-        }
-        55% {
-            visibility: visible;
-            opacity: 0.5;
-        }
-        100% {
-            visibility: hidden;
-            opacity: 0;
-        }
-    }
 }
+
 
 
 a, a:hover, a:visited {
@@ -89,6 +48,9 @@ a, a:hover, a:visited {
 
     &-ai-c {
         align-items: center;
+    }
+    &-jc-fe {
+        justify-content: flex-end;
     }
 }
 

@@ -2,6 +2,8 @@
 
 .header{
     // border-bottom: 1px solid $gray;
+    position: fixed;
+    width: 100%;
 
     .overlay {
         position: fixed;
@@ -17,6 +19,11 @@
         position: relative;
         background-color: $blackBg;
         padding: 1.0625rem 1.5rem;
+        justify-content: center;
+
+        @include breakpoint-up(large){
+            justify-content: flex-end;
+        }
     }
 
     
@@ -26,7 +33,7 @@
         left: 50%;
         transform: translateX(-50%);
         margin-top: 1.5rem;
-        // background-color: $blackBg;
+        background-color: $diffBlack;
         padding: 1.625rem;
         border-radius: 5px;
         
