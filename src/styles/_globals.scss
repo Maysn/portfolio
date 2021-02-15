@@ -35,8 +35,14 @@ body{
         height: 57vh;
         // animation: blinking 1500ms ease-in-out 7s infinite alternate forwards ;
         animation: blinking 1.7s cubic-bezier(.5, 0, 1, 2) 3s infinite alternate;
+        
         @include breakpoint-up(medium){
             height: 83vh;
+        }
+
+        &.delay-light {
+            visibility: hidden;
+            animation-delay: 1s;
         }
     }
 

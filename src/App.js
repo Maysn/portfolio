@@ -19,7 +19,7 @@ function App() {
       <Header open={open} setOpen={setOpen} loading={loading}/>
       <div className="wrapper">
       <div className="container__logo">
-      <div className={open? "has-fade" : "container__light"} style={{backgroundImage: `url(${logo})`}}></div>
+      <div className={loading? "container__light" : `${open? "has-fade" : "delay-light container__light"}`} style={{backgroundImage: `url(${logo})`}}></div>
       </div>
       </div>
     </div>
