@@ -25,12 +25,12 @@ function App() {
             className={
               loading
                 ? "home__light"
-                : `${open ? "has-fade" : "delay-light home__light"}`
+                : `${open ? "has-fade" : "home__light delay-light"}`
             }
             style={{ backgroundImage: `url(${logo})` }}
           ></div>
-          <div className="home__introduction">
-            <p>I'm Mazen, a self-taught frontend developer based in Egypt. I find an unparalleled enjoyment while working on projects, and trying to solve problems
+          <div className={loading? "home__introduction" : `${open? "has-fade" : "home__introduction"}`}>
+            <p>I'm Mazen, a self-taught frontend developer based in Egypt. I find an unparalleled enjoyment working on projects, and trying to solve problems
               encountered in the process.
             </p>
           </div>
