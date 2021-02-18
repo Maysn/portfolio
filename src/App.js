@@ -1,13 +1,24 @@
 import React, { useState, useEffect } from "react";
-import zed from "./assets/zed.png";
 import "./App.scss";
-import "./components/header/header";
+import About from "./components/about";
+import Contact from "./components/contact";
 import Header from "./components/header/header";
-import logo from "./assets/logo2t.png";
+import Home from "./components/home";
+import Projects from "./components/projects";
 
 function App() {
   const [open, setOpen] = useState(false);
   const [loading, setLoading] = useState(true);
+
+  // useEffect(() => {
+  //   const body = document.querySelector('body');
+  //   if (open === true) {
+  //     body.classList.add('noscroll');
+  //   }
+  //   else {
+  //     body.classList.remove('noscroll');
+  //   }
+  // },[open])
 
   useEffect(() => {
     if (open === true) {
@@ -20,21 +31,10 @@ function App() {
       <Header open={open} setOpen={setOpen} loading={loading} />
 
       <div className="container">
-        <section id="Home" className="home">
-          <div
-            className={
-              loading
-                ? "home__light"
-                : `${open ? "has-fade" : "home__light delay-light"}`
-            }
-            style={{ backgroundImage: `url(${logo})` }}
-          ></div>
-          <div className={loading? "home__introduction" : `${open? "has-fade" : "home__introduction"}`}>
-            <p>I'm Mazen, a self-taught frontend developer based in Egypt. I find an unparalleled enjoyment working on projects, and trying to solve problems
-              encountered in the process.
-            </p>
-          </div>
-        </section>
+       <Home open={open} loading={loading}/>
+       <About/>
+       <Projects/>
+       <Contact/>
       </div>
     </div>
   );

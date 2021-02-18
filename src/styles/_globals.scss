@@ -17,7 +17,11 @@ body{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 1.3;
     background-color: $blackBg;
-    color: $brick;
+    // color: $brick;
+    color: wheat;
+}
+.noscroll {
+    overflow: hidden;
 }
 
 .container {

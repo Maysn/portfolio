@@ -12,8 +12,9 @@
         background-size: contain;
         background-position: top;
         background-repeat: no-repeat;
-        height: 45vh;
-        width: 100vw;
+        background-attachment: fixed;
+        height: 55vh;
+        width: 79vw;
         animation: blinking 1.7s cubic-bezier(.5, 0, 1, 2) 3s infinite alternate;
         
         @include breakpoint-up(medium){
