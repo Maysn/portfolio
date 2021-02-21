@@ -1,10 +1,24 @@
 .about{
+    min-height: 100vh;
 
-    &__title {
+    &_cont {
+        padding: 0 .5rem;
 
-    }
-    
-    &__text {
-        
+        @include breakpoint-up(large){
+        padding: 3rem;
+        }
+
+        &__title {
+
+        }
+
+        &__text {
+            line-height: 1.4;
+            
+            @include breakpoint-up(large){
+                line-height: 1.5;
+                font-size: 1.5rem;
+            }
+        }
     }
 }

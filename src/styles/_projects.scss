@@ -1,20 +1,87 @@
-.projects {
+.projects{
+    min-height: 100vh;
+}
 
-    &__title {
+    .project{
+        
+        &__content {
+            @include breakpoint-up(large){
+                padding: 3rem;
+                }
+        }
 
-    }
+        &__grid {
 
-    &__wrapper {
-
-        &.project {
-
-            &__preview {
-
-            }
-
-            &__desc {
-                
+            @include breakpoint-up(large){
+                display: flex;
             }
         }
+        
+        &__item {
+            
+        }
+
+        &__image {
+            & img {
+            height: 6.25rem;
+
+            }
+        }
+
+        &__desc {
+            
+        }
     }
-}
+
+    .snip1460 {
+        font-family: 'Josefin Sans', sans-serif;
+        position: relative;
+        overflow: hidden;
+        margin-right: auto;
+        margin-left: auto;
+        min-width: 230px;
+        max-width: 315px;
+        width: 100%;
+        color: #000000;
+        text-align: left;
+        background-color: #ffffff;
+      }
+      .snip1460 * {
+        -webkit-transition: all 0.45s ease;
+        transition: all 0.45s ease;
+      }
+      .snip1460 img {
+        vertical-align: top;
+        max-width: 100%;
+        backface-visibility: hidden;
+      }
+      .snip1460 figcaption {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1;
+        opacity: 0;
+        padding: 20px 30px 20px 50px;
+        // padding: 1rem;
+      }
+      .snip1460 a {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        z-index: 1;
+      }
+      .snip1460:hover > img {
+        -webkit-filter: blur(30px);
+        filter: blur(30px);
+        -webkit-transform: scale(1.2);
+        transform: scale(1.2);
+        opacity: 0.15;
+      }
+      .snip1460:hover figcaption {
+        opacity: 1;
+        -webkit-transition-delay: 0.2s;
+        transition-delay: 0.2s;
+      }

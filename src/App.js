@@ -34,7 +34,7 @@ function App() {
        <Home open={open} loading={loading}/>
        <About/>
        <Projects/>
-       <Contact/>
+       {/* <Contact/> */}
       </div>
     </div>
   );
