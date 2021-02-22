@@ -64,8 +64,11 @@
   width: 100%;
   z-index: 1;
   opacity: 0;
+  display: flex;
+  flex-direction: column;
 }
 .figure a {
+  margin: 0 auto;
   font-weight: 700;
   color: $lessBrightCyan;
   // position: absolute;
@@ -74,14 +77,9 @@
   // left: 0;
   // right: 0;
   // z-index: 1;
-
-  &:not(:last-child) {
-    margin-left: 4.3rem;
-    margin-right: 1rem;
-
-    @include breakpoint-up(large) {
-      margin-left: 5.123rem;
-    }
+  &:first-child {
+    margin-bottom: -4rem;
+    margin-top: 1rem;
   }
 }
 .figure:hover > img {

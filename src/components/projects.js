@@ -15,8 +15,8 @@ export default function Projects(params) {
                 <a href="https://github.com/Maysn/todo-app" target="_blank">
                   Github
                 </a>
-                <a href="https://maysn-todo.netlify.app/" target="_blank">
-                  Netlify
+                <a href="https://maysn-todo.Live preview.app/" target="_blank">
+                  Live preview
                 </a>
               </figcaption>
             </figure>
@@ -31,8 +31,8 @@ export default function Projects(params) {
                 <a href="https://github.com/Maysn/weather-app" target="_blank">
                   Github
                 </a>
-                <a href="https://maysn-weather.netlify.app/" target="_blank">
-                  Netlify
+                <a href="https://maysn-weather.Live preview.app/" target="_blank">
+                  Live preview
                 </a>
               </figcaption>
             </figure>
@@ -50,8 +50,8 @@ export default function Projects(params) {
                 <a href="https://github.com/Maysn/portfolio" target="_blank">
                   Github
                 </a>
-                <a href="https://portfolio-maysn.netlify.app/" target="_blank">
-                  Netlify
+                <a href="https://portfolio-maysn.Live preview.app/" target="_blank">
+                  Live preview
                 </a>
               </figcaption>
             </figure>
