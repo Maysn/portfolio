@@ -2,6 +2,7 @@ import React, { useState, useEffect } from "react";
 import "./App.scss";
 import About from "./components/about";
 import Contact from "./components/contact";
+import Footer from "./components/footer";
 import Header from "./components/header/header";
 import Home from "./components/home";
 import Projects from "./components/projects";
@@ -34,7 +35,8 @@ function App() {
        <Home open={open} loading={loading}/>
        <About/>
        <Projects/>
-       {/* <Contact/> */}
+       <Contact/>
+       {/* <Footer/> */}
       </div>
     </div>
   );

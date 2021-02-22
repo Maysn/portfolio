@@ -1,4 +1,5 @@
 .home {
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 
@@ -69,7 +70,7 @@
     &__introduction {
         //for all view ports
         font-family: 'Gloria Hallelujah', cursive;
-        color: $pink;
+        // color: $pink;
         
         //mobile design
         font-size: 1.1rem;
@@ -97,22 +98,25 @@
         }
 
          p {
-            &::before{
-                content: open-quote;
-            }
-            &::after{
-                content: close-quote;
-            }
+             @include breakpoint-up(large){
+                 margin: 0 1rem;
+             }
+            // &::before{
+            //     content: open-quote;
+            // }
+            // &::after{
+            //     content: close-quote;
+            // }
             
-        @keyframes txtdelay {
-            from {
-                visibility: hidden;
-                opacity: 0;
-            }
-            to {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
+        // @keyframes txtdelay {
+        //     from {
+        //         visibility: hidden;
+        //         opacity: 0;
+        //     }
+        //     to {
+        //         visibility: visible;
+        //         opacity: 1;
+        //     }
+        // }
     }
 }

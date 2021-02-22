@@ -14,8 +14,8 @@ function Home({open, loading}){
           style={{ backgroundImage: `url(${logo})` }}
         ></div>
         <div className={loading? "home__introduction" : `${open? "has-fade" : "home__introduction"}`}>
-          <p>I'm Mazen, a self-taught frontend developer based in Egypt. I find an unparalleled enjoyment working on projects, and trying to solve problems
-            encountered in the process.
+          <h1>Hey , I'm Mazen,</h1>
+          <p> a self-taught frontend developer based in Egypt.
           </p>
         </div>
       </section>

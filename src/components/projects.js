@@ -5,41 +5,39 @@ export default function Projects(params) {
       <div className="project__content">
         <h2>My projects</h2>
         <div className="project__grid">
-          <figure className="snip1460">
+          <div className="project__item">
+            <figure className="figure">
               <img src={ninja} alt="" />
-            <figcaption >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              consequuntur corporis ducimus tempore consequatur minima natus
-              voluptates, omnis enim facere libero temporibus impedit sit
-              asperiores ipsam error eos tenetur! Voluptas.
-            </figcaption>
-          </figure>
-          <figure className="snip1460">
+              <figcaption><a href="">Github</a> <a href="">Netlify</a></figcaption>
+            </figure>
+            <div className="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div className="project__item">
+            <figure className="figure">
               <img src={ninja} alt="" />
-            <figcaption >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              consequuntur corporis ducimus tempore consequatur minima natus
-              voluptates, omnis enim facere libero temporibus impedit sit
-              asperiores ipsam error eos tenetur! Voluptas.
-            </figcaption>
-          </figure>
-          <figure className="snip1460">
+              <figcaption><a href="">Github</a> <a href="">Netlify</a></figcaption>
+            </figure>
+            <div className="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
+          <div className="project__item">
+            <figure className="figure">
               <img src={ninja} alt="" />
-            <figcaption >
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi,
-              consequuntur corporis ducimus tempore consequatur minima natus
-              voluptates, omnis enim facere libero temporibus impedit sit
-              asperiores ipsam error eos tenetur! Voluptas.
-            </figcaption>
-          </figure>
+              <figcaption><a href="">Github</a> <a href="">Netlify</a></figcaption>
+            </figure>
+            <div className="project__desc">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            </div>
+          </div>
         </div>
       </div>
+      <hr/>
     </section>
   );
 }
-
-
-
 
 // <div className="project__item">
 //             <div className="project__image">
@@ -52,4 +50,3 @@ export default function Projects(params) {
 //               asperiores ipsam error eos tenetur! Voluptas.
 //             </div>
 //           </div>
-          

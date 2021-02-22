@@ -7,8 +7,7 @@
         left: 50%;
         transform: translateX(-50%);
         margin-top: 1.5rem;
-        background-color: $diffBlack;
-        padding: 1.625rem;
+        padding: 2rem;
         border-radius: 5px;
         
         a {
@@ -17,6 +16,6 @@
             text-align: center;
             font-size: 1.3rem;
             font-family: 'Gloria Hallelujah', cursive;;
-            color: $pink;
+            color: $lessBrightCyan;
         }
     }

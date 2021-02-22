@@ -18,22 +18,21 @@
         }
         
         &__item {
+            margin: 1rem;
             
-        }
-
-        &__image {
-            & img {
-            height: 6.25rem;
-
+            &:not(:first-child){
+              @include breakpoint-down(medium){
+                margin-top: 2rem;
+              }
             }
         }
 
         &__desc {
-            
+            text-align: center;
         }
     }
 
-    .snip1460 {
+    .figure {
         font-family: 'Josefin Sans', sans-serif;
         position: relative;
         overflow: hidden;
@@ -44,43 +43,52 @@
         width: 100%;
         color: #000000;
         text-align: left;
-        background-color: #ffffff;
+        background-color: $lighterBg;
       }
-      .snip1460 * {
+      .figure * {
         -webkit-transition: all 0.45s ease;
         transition: all 0.45s ease;
       }
-      .snip1460 img {
+      .figure img {
         vertical-align: top;
         max-width: 100%;
         backface-visibility: hidden;
       }
-      .snip1460 figcaption {
+      .figure figcaption {
         position: absolute;
-        top: 0;
+        top: 50%;
         left: 0;
         width: 100%;
         z-index: 1;
         opacity: 0;
-        padding: 20px 30px 20px 50px;
-        // padding: 1rem;
       }
-      .snip1460 a {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 1;
+      .figure a {
+        font-weight: 700;
+        color: $lessBrightCyan;
+        // position: absolute;
+        // top: 0;
+        // bottom: 0;
+        // left: 0;
+        // right: 0;
+        // z-index: 1;
+
+        &:not(:last-child) {
+          margin-left: 4.3rem;
+          margin-right: 1rem;
+
+          @include breakpoint-up(large){
+            margin-left: 5.123rem;
+          }
+        }
       }
-      .snip1460:hover > img {
+      .figure:hover > img {
         -webkit-filter: blur(30px);
         filter: blur(30px);
         -webkit-transform: scale(1.2);
         transform: scale(1.2);
         opacity: 0.15;
       }
-      .snip1460:hover figcaption {
+      .figure:hover figcaption {
         opacity: 1;
         -webkit-transition-delay: 0.2s;
         transition-delay: 0.2s;

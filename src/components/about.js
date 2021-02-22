@@ -18,6 +18,7 @@ export default function About(params) {
           </p>
         </div>
       </div>
+       <hr/>
     </section>
   );
 }
