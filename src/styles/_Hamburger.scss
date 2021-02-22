@@ -1,13 +1,13 @@
-@import '../styles//variables';
 
 .hamburger{
+    
      span {
         display: block;
         width: 26px;
         height: 3px;
-        background-color: $brick;
+        background-color: $lessBrightCyan;
         transition: all 200ms ease-in-out;
-        transform-origin: 2px 2px;
+        transform-origin: 2px 1px;
 
 
         &:not(:last-child){
@@ -15,7 +15,7 @@
         }
     }
     &.open {
-        animation: rot .7s;
+        animation: rot .7s forwards;
         
         span:first-child {
            transform: rotate(45deg);
@@ -32,7 +32,7 @@
                transform: rotate(0);
            }
            to {
-               transform: rotate(-360deg);
+               transform: rotate(-180deg);
            }
        }
    }
@@ -44,7 +44,7 @@
                transform: rotate(0);
            }
            to {
-               transform: rotate(360deg);
+               transform: rotate(180deg);
            }
        }
    }

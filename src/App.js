@@ -1,54 +1,43 @@
-import React, {useState} from 'react';
-import zed from "./assets/zed.png";
+import React, { useState, useEffect } from "react";
 import "./App.scss";
-import Hamburger from "./components/Hamburger";
-import NavLinks from "./components/navlinks";
+import About from "./components/about";
+import Contact from "./components/contact";
+import Header from "./components/header/header";
+import Home from "./components/home";
+import Projects from "./components/projects";
 
 function App() {
+  const [open, setOpen] = useState(false);
+  const [loading, setLoading] = useState(true);
 
-  const [open, SetOpen] = useState(false);
-  // const opened = () => Setopen(!open);
+  // useEffect(() => {
+  //   const body = document.querySelector('body');
+  //   if (open === true) {
+  //     body.classList.add('noscroll');
+  //   }
+  //   else {
+  //     body.classList.remove('noscroll');
+  //   }
+  // },[open])
+
+  useEffect(() => {
+    if (open === true) {
+      setLoading(false);
+    }
+  }, [open]);
+
   return (
-    <div className="container">
-      <header className="header">
-        <div className={`overlay ${open? "fade-in" : "fade-out"}`}></div>
+    <div className="site-wrapper">
+      <Header open={open} setOpen={setOpen} loading={loading} />
 
-        <nav className="flex flex-js-sb flex-ai-c">
-          <div className="header__logo">
-            <a href="/">
-              <img src={zed} alt="Maysn" />
-            </a>
-          </div>
-          <Hamburger open={open} setOpen={SetOpen}/>
-          <NavLinks open={open} setOpen={SetOpen}/>
-          </nav>
-          <div className="header__mobmenu"></div>
-      </header>
-      <div className="body">
-        <a href="#home">Home</a>
-        <a href="#about">About</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+      <div className="container">
+       <Home open={open} loading={loading}/>
+       <About/>
+       <Projects/>
+       <Contact/>
       </div>
     </div>
   );
 }
 
 export default App;
-
-// <div className="App">
-//       <header className="App-header">
-//         <img src={logo} className="App-logo" alt="logo" />
-//         <p>
-//           Edit <code>src/App.js</code> and save to reload.
-//         </p>
-//         <a
-//           className="App-link"
-//           href="https://reactjs.org"
-//           target="_blank"
-//           rel="noopener noreferrer"
-//         >
-//           Learn React
-//         </a>
-//       </header>
-//     </div>

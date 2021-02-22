@@ -1,4 +1,3 @@
-import "./navlinks.scss";
 
 function NavLinks() {
   return (

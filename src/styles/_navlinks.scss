@@ -5,14 +5,16 @@
     
     & a {
         position: relative;
-        color: $moov;
+        color: $lessBrightCyan;
         transition: color 200ms ease-in-out;
-
-        &:last-child  {
-            margin-right: 11px;
+        font-family: 'Gloria Hallelujah', cursive;
+        font-size: 1.3rem;
+        
+        &:last-child {
+            margin-right: 0.8125rem;
         }
         &:not(:last-child){
-            margin-right: 33px;
+            margin-right: 2.0625rem;
         }
 
         &::after {
@@ -22,14 +24,14 @@
             height: 5px;
             right: 0;
             left: 0;
-            bottom: -32px;
-            background: $pink;
+            bottom: -19px;
+            background: $lessBrightCyan;
             opacity: 0;
             transition: opacity 200ms ease-in-out;
         }
 
         &:hover {
-            color: $pink;
+            color: $brightCyan;
            
             &::after {
                opacity: 1;

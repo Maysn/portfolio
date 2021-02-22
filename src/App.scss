@@ -1,5 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal&display=swap');
 @import 'styles/variables';
 @import 'styles/mixins';
+@import 'styles/animations';
 
 @import 'styles/globals';
 @import 'styles/header';
+@import 'styles/navlinks';
+@import 'styles/Hamburger';
+@import 'styles/mobmenu';
+@import 'styles/home';
+@import 'styles/about';
+@import 'styles/projects';
+@import 'styles/contact';
+@import 'styles/footer';
