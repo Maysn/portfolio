@@ -1,11 +1,11 @@
 .about{
-    min-height: 100vh;
 
     &_cont {
-        padding: 0 .5rem;
+        padding: 3rem .5rem;
 
         @include breakpoint-up(large){
-        padding: 3rem;
+        padding: 7rem 3rem;
+        margin-bottom: 2rem;
         }
 
         &__title {

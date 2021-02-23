@@ -1,18 +1,13 @@
 .footer {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
   padding: 0.3rem;
   display: flex;
-  font-size: 0.83rem;
+  font-family: 'Oswald', sans-serif;
+  font-size: 0.75rem;
   justify-content: center;
   border-top: 1px solid gray;
 
   @include breakpoint-up(large) {
     padding: 1rem;
-    font-size: 1rem;
-  }
-
-  &__content {
+    font-size: .9rem;
   }
 }

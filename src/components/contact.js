@@ -1,5 +1,4 @@
 import { FaLinkedin, FaGithub } from "react-icons/fa";
-import Footer from "./footer";
 export default function Contact(params) {
   return (
     <section id="Contact" className="contact">
@@ -14,7 +13,6 @@ export default function Contact(params) {
           </div>
         </div>
       </div>
-      <Footer />
     </section>
   );
 }
