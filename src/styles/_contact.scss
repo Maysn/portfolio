@@ -1,27 +1,33 @@
 .contact {
-  min-height: 85vh;
-  position: relative;
   display: flex;
+  justify-content: center;
+  font-family: "Oswald", sans-serif;
 
   &__content {
-    padding: 1rem;
+    padding: 3rem 0;
+    margin-bottom: 3rem;
 
     @include breakpoint-up(large) {
       padding: 3rem;
+    }
+
+    & h2 {
+      font-size: 2.7rem;
+
+      @include breakpoint-up(large) {
+        font-size: 4rem;
+      }
     }
   }
 
   &__links {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    margin-left: 3rem;
+    justify-content: space-around;
     font-size: 1rem;
 
     @include breakpoint-up(large) {
-      margin-left: 5rem;
-      font-size: 1.1rem;
+      font-size: 1.3rem;
+      padding: 2rem 0;
     }
 
     & a {
@@ -30,12 +36,6 @@
       &:hover {
         color: $brightCyan;
       }
-    }
-  }
-
-  &__social {
-    &:last-child {
-      margin-top: 2rem;
     }
   }
 }

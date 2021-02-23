@@ -1,17 +1,17 @@
-.projects {
-  min-height: 100vh;
-}
-
 .project {
   &__content {
+    padding: 3rem 0;
     @include breakpoint-up(large) {
-      padding: 3rem;
+      padding: 7rem 3rem;
+      padding-bottom: 3rem;
     }
   }
 
   &__grid {
+    margin-top: 3rem;
     @include breakpoint-up(large) {
       display: flex;
+      margin-top: 0;
     }
   }
 
@@ -29,7 +29,12 @@
   &__desc {
     text-align: center;
     line-height: 1.7;
-    font-size: 1.1rem;
+    font-size: 1rem;
+
+    @include breakpoint-up(large) {
+      line-height: 1.9;
+      font-size: 1.2rem;
+    }
   }
 }
 
@@ -40,8 +45,8 @@
   margin-right: auto;
   margin-left: auto;
   min-width: 14.375rem;
-  max-width: 19.6875rem;
-  min-height: 13.4375rem;
+  max-width: 18.6875rem;
+  min-height: 12.4375rem;
   max-height: 15.625rem;
   width: 100%;
   color: #000000;
