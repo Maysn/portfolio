@@ -15,7 +15,7 @@ export default function Projects(params) {
                 <a href="https://github.com/Maysn/todo-app" target="_blank">
                   Github
                 </a>
-                <a href="https://maysn-todo.netlify.app/" target="_blank">
+                <a href="https://todo-maysn.netlify.app/" target="_blank">
                   Live preview
                 </a>
               </figcaption>
