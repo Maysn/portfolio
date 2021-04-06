@@ -1,4 +1,4 @@
-import logo from "../assets/logo2t.png";
+import logo from "../assets/logot.png";
 
 
 function Home({open, loading}){
