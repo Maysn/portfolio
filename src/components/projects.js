@@ -50,15 +50,12 @@ export default function Projects(params) {
                 <a href="https://github.com/Maysn/portfolio" target="_blank">
                   Github
                 </a>
-                <a href="https://portfolio-maysn.netlify.app/" target="_blank">
-                  Live preview
-                </a>
               </figcaption>
             </figure>
             <div className="project__desc">
               <p>
-                This very portfolio, which i designed -If it looks good-,
-                otherwise it's not mine!
+                This very portfolio, which i designed -If it looks good,
+                otherwise it's not mine!-
               </p>
             </div>
           </div>

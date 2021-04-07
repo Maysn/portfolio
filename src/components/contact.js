@@ -9,7 +9,7 @@ export default function Contact(params) {
             <FaGithub /> <a href="https://github.com/Maysn" target="_blank">Github</a>
           </div>
           <div className="contact__social">
-            <FaLinkedin /> <a href="https://www.linkedin.com/in/mazen-mohamed-a983b6207/" target="_blank">LinkedIn</a>
+            <FaLinkedin /> <a href="https://www.linkedin.com/in/mazen-abdelmaksoud-a983b6207/" target="_blank">LinkedIn</a>
           </div>
         </div>
       </div>
