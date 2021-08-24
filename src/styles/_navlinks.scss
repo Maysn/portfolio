@@ -1,41 +1,39 @@
-@import '../styles//variables';
-
+@import "../styles//variables";
 
 .nav-links {
-    
-    & a {
-        position: relative;
-        color: $lessBrightCyan;
-        transition: color 200ms ease-in-out;
-        font-family: 'Gloria Hallelujah', cursive;
-        font-size: 1.3rem;
-        
-        &:last-child {
-            margin-right: 0.8125rem;
-        }
-        &:not(:last-child){
-            margin-right: 2.0625rem;
-        }
+  & a {
+    position: relative;
+    color: $lessBrightCyan;
+    transition: color 200ms ease-in-out;
+    font-family: "Gloria Hallelujah", cursive;
+    font-size: 1.3rem;
 
-        &::after {
-            content: "";
-            position: absolute;
-            display: block;
-            height: 5px;
-            right: 0;
-            left: 0;
-            bottom: -19px;
-            background: $brightCyan;
-            opacity: 0;
-            transition: opacity 200ms ease-in-out;
-        }
-
-        &:hover {
-            color: $brightCyan;
-           
-            &::after {
-               opacity: 1;
-            }
-        }
+    &:last-child {
+      margin-right: 0.8125rem;
     }
+    &:not(:last-child) {
+      margin-right: 2.0625rem;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      display: block;
+      height: 5px;
+      right: 0;
+      left: 0;
+      bottom: -10px;
+      background: $brightCyan;
+      opacity: 0;
+      transition: opacity 200ms ease-in-out;
+    }
+
+    &:hover {
+      color: $brightCyan;
+
+      &::after {
+        opacity: 1;
+      }
+    }
+  }
 }

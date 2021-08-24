@@ -2,12 +2,37 @@ import ninja from "../assets/zed.png";
 import todo from "../assets/todo-app.png";
 import weather from "../assets/weather-app.png";
 import portfolio from "../assets/portfolio.png";
+import list from "../assets/repo-list.png";
 export default function Projects(params) {
   return (
     <section id="Projects" className="projects">
       <div className="project__content">
         <h2>My projects</h2>
         <div className="project__grid">
+          <div className="project__item">
+            <figure className="figure">
+              <img src={list} alt="Github repositories list" />
+              <figcaption>
+                <a
+                  href="https://github.com/Maysn/Gemography-Github-list"
+                  target="_blank"
+                >
+                  Github
+                </a>
+                <a href="https://maysn-repo-list.netlify.app/" target="_blank">
+                  Live preview
+                </a>
+              </figcaption>
+            </figure>
+            <div className="project__desc">
+              <p>
+                Used Github API to view most starred repositories, added
+                pagination feature to fetch and render more repositories as you
+                scroll down to the bottom of the page.
+              </p>
+            </div>
+          </div>
+
           <div className="project__item">
             <figure className="figure">
               <img src={todo} alt="Todo App" />
@@ -24,6 +49,7 @@ export default function Projects(params) {
               <p>A simple todo app, with basic CRUD functionality.</p>
             </div>
           </div>
+
           <div className="project__item">
             <figure className="figure">
               <img src={weather} alt="Weather app" />
@@ -43,6 +69,7 @@ export default function Projects(params) {
               </p>
             </div>
           </div>
+
           <div className="project__item">
             <figure className="figure">
               <img src={portfolio} alt="My portfolio" />
