@@ -3,12 +3,34 @@ import todo from "../assets/todo-app.png";
 import weather from "../assets/weather-app.png";
 import portfolio from "../assets/portfolio.png";
 import list from "../assets/repo-list.png";
+import pokemon from "../assets/pokemon.png";
+import mia from "../assets/mia.png";
 export default function Projects(params) {
   return (
     <section id="Projects" className="projects">
       <div className="project__content">
         <h2>My projects</h2>
         <div className="project__grid">
+          <div className="project__item">
+            <figure className="figure">
+              <img src={pokemon} alt="Pokimane" />
+              <figcaption>
+                <a href="https://github.com/Maysn/pokemon-app" target="_blank">
+                  Github
+                </a>
+                <a href="https://maysn-pokemon.netlify.app/" target="_blank">
+                  Live preview
+                </a>
+              </figcaption>
+            </figure>
+            <div className="project__desc">
+              <p>
+                A pokemon browser game that I made using React, Redux, Styled
+                Components, and the Pokemon API.
+              </p>
+            </div>
+          </div>
+
           <div className="project__item">
             <figure className="figure">
               <img src={list} alt="Github repositories list" />
@@ -29,6 +51,30 @@ export default function Projects(params) {
                 Used Github API to view most starred repositories, added
                 pagination feature to fetch and render more repositories as you
                 scroll down to the bottom of the page.
+              </p>
+            </div>
+          </div>
+          <div className="project__item">
+            <figure className="figure">
+              <img src={mia} alt="Mia birthday gift" />
+              <figcaption>
+                {/* <a
+                  href="https://github.com/Maysn/Gemography-Github-list"
+                  target="_blank"
+                >
+                  Github
+                </a> */}
+                <a href="https://mia-bd.netlify.app/" target="_blank">
+                  Live preview
+                </a>
+              </figcaption>
+            </figure>
+            <div className="project__desc">
+              <p>
+                Here I thought to use my newly acquired super frontend powers to
+                make this birthday gift for a friend! So I just looked up these
+                CSS snippets on Codepen, put them together and that was the
+                result.
               </p>
             </div>
           </div>
