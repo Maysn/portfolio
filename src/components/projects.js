@@ -54,30 +54,6 @@ export default function Projects(params) {
               </p>
             </div>
           </div>
-          <div className="project__item">
-            <figure className="figure">
-              <img src={mia} alt="Mia birthday gift" />
-              <figcaption>
-                {/* <a
-                  href="https://github.com/Maysn/Gemography-Github-list"
-                  target="_blank"
-                >
-                  Github
-                </a> */}
-                <a href="https://mia-bd.netlify.app/" target="_blank">
-                  Live preview
-                </a>
-              </figcaption>
-            </figure>
-            <div className="project__desc">
-              <p>
-                Here I thought to use my newly acquired super frontend powers to
-                make this birthday gift for a friend! So I just looked up these
-                CSS snippets on Codepen, put them together and that was the
-                result.
-              </p>
-            </div>
-          </div>
 
           <div className="project__item">
             <figure className="figure">
