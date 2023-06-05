@@ -1,10 +1,9 @@
-import ninja from "../assets/zed.png";
 import todo from "../assets/todo-app.png";
 import weather from "../assets/weather-app.png";
-import portfolio from "../assets/portfolio.png";
 import list from "../assets/repo-list.png";
 import pokemon from "../assets/pokemon.png";
-import mia from "../assets/mia.png";
+import calculator from "../assets/calculator.png";
+import news from "../assets/news.png";
 export default function Projects(params) {
   return (
     <section id="Projects" className="projects">
@@ -25,8 +24,8 @@ export default function Projects(params) {
             </figure>
             <div className="project__desc">
               <p>
-                A pokemon browser game that I made using React, Redux, Styled
-                Components, and the Pokemon API.
+                A pokemon browser game made using React, Redux, Styled
+                Components, and PokeAPI.
               </p>
             </div>
           </div>
@@ -48,9 +47,8 @@ export default function Projects(params) {
             </figure>
             <div className="project__desc">
               <p>
-                Used Github API to view most starred repositories, added
-                pagination feature to fetch and render more repositories as you
-                scroll down to the bottom of the page.
+                A project in which I exercised implementing infinite scrolling
+                feature.
               </p>
             </div>
           </div>
@@ -74,6 +72,64 @@ export default function Projects(params) {
 
           <div className="project__item">
             <figure className="figure">
+              <img src={calculator} alt="Calculator app" />
+              <figcaption>
+                <a
+                  href="https://github.com/Maysn/Calculator-app"
+                  target="_blank"
+                >
+                  Github
+                </a>
+                <a
+                  href="https://majestic-calculator.netlify.app/"
+                  target="_blank"
+                >
+                  Live preview
+                </a>
+                <a
+                  href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29"
+                  target="_blank"
+                >
+                  Original design
+                </a>
+              </figcaption>
+            </figure>
+            <div className="project__desc">
+              <p>A calculator app with 3 different themes.</p>
+            </div>
+          </div>
+
+          <div className="project__item">
+            <figure className="figure">
+              <img src={news} alt="news homepage mockup" />
+              <figcaption>
+                <a
+                  href="https://github.com/Maysn/News-Homepage"
+                  target="_blank"
+                >
+                  Github
+                </a>
+                <a
+                  href="https://news-homepage-mockup.netlify.app/"
+                  target="_blank"
+                >
+                  Live preview
+                </a>
+                <a
+                  href="https://www.frontendmentor.io/challenges/news-homepage-H6SWTa1MFl"
+                  target="_blank"
+                >
+                  Original design
+                </a>
+              </figcaption>
+            </figure>
+            <div className="project__desc">
+              <p>A news homepage mockup.</p>
+            </div>
+          </div>
+
+          <div className="project__item">
+            <figure className="figure">
               <img src={weather} alt="Weather app" />
               <figcaption>
                 <a href="https://github.com/Maysn/weather-app" target="_blank">
@@ -86,25 +142,8 @@ export default function Projects(params) {
             </figure>
             <div className="project__desc">
               <p>
-                A API based project, that tells you the weather & contains
+                A simple weather app that has a search feature and renders
                 dynamic backgrounds based on the weather state.
-              </p>
-            </div>
-          </div>
-
-          <div className="project__item">
-            <figure className="figure">
-              <img src={portfolio} alt="My portfolio" />
-              <figcaption>
-                <a href="https://github.com/Maysn/portfolio" target="_blank">
-                  Github
-                </a>
-              </figcaption>
-            </figure>
-            <div className="project__desc">
-              <p>
-                This very portfolio, which i designed -If it looks good,
-                otherwise it's not mine!-
               </p>
             </div>
           </div>
@@ -113,6 +152,8 @@ export default function Projects(params) {
     </section>
   );
 }
+
+// to easily add a new project
 
 // <div className="project__item">
 //             <div className="project__image">
