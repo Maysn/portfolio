@@ -6,10 +6,19 @@ export default function Contact(params) {
         <h2>Get in touch</h2>
         <div className="contact__links">
           <div className="contact__social">
-            <FaGithub /> <a href="https://github.com/Maysn" target="_blank">Github</a>
+            <FaGithub />{" "}
+            <a href="https://github.com/Maysn" target="_blank">
+              Github
+            </a>
           </div>
           <div className="contact__social">
-            <FaLinkedin /> <a href="https://www.linkedin.com/in/mazen-abdelmaksoud-a983b6207/" target="_blank">LinkedIn</a>
+            <FaLinkedin />{" "}
+            <a
+              href="https://www.linkedin.com/in/mazen-abdelmaksoud/"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
           </div>
         </div>
       </div>
