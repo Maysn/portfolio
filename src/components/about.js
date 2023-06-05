@@ -8,12 +8,14 @@ export default function About(params) {
         <h2 className="about_cont__title">About me</h2>
         <div className="about_cont__text">
           <p>
-            My name is Mazen, I'm a {age()} years old guy from Egypt. I'm
-            currently at the beginning of my journey as a frontend developer.
-            Getting into this career was a complete coincedence, when a friend
-            talked to me about it, then I thought to give it a try since I
-            wasn't really sure about what I wanted to do with my career, and I
-            fell in love with coding ever since.
+            I have always been fascinated by everything about websites; starting
+            with their animations, all the way down to how they function under
+            the hood, And so I decided to learn how to build those websites
+            myself. Being strategy games enjoyer helped a lot with my learning
+            to code journey; patience, paying attention to details, observing
+            and reacting to problems as they emerge, and figuring out how to fix
+            them. These skills have all proven to be exactly what a frontend
+            developer needs to meet their desired results.
           </p>
         </div>
       </div>
