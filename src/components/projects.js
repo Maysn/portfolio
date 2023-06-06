@@ -24,8 +24,8 @@ export default function Projects(params) {
             </figure>
             <div className="project__desc">
               <p>
-                A pokemon browser game made using React, Redux, Styled
-                Components, and PokeAPI.
+                A pokemon browser game made using React, Redux,
+                styled-components, and PokeAPI.
               </p>
             </div>
           </div>
@@ -143,7 +143,7 @@ export default function Projects(params) {
             <div className="project__desc">
               <p>
                 A simple weather app that has a search feature and renders
-                dynamic backgrounds based on the weather state.
+                dynamic backgrounds based on weather state.
               </p>
             </div>
           </div>
