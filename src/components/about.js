@@ -14,8 +14,8 @@ export default function About(params) {
             myself. Being an avid strategy gamer has taught me skills such as;
             patience, paying attention to details, reacting to problems as they
             emerge, and figuring out how to solve them. These skills have all
-            been of great use to me with my journey of learning so far.. And I
-            am still learning more and more every day, for I believe one should
+            been of great use to me with my journey of learning so far, And I am
+            still learning more and more every day, for I believe one should
             never stop learning.
           </p>
         </div>
