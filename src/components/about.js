@@ -11,11 +11,12 @@ export default function About(params) {
             I have always been fascinated by everything about websites; starting
             with their animations, all the way down to how they function under
             the hood, And so I decided to learn how to build those websites
-            myself. Being strategy games enjoyer helped a lot with my learning
-            to code journey; patience, paying attention to details, reacting to
-            problems as they emerge, and figuring out how to solve them. These
-            skills have all been great to help me with this ongoing journey so
-            far.. And I am still on my way to learn more and more every day.
+            myself. Being an avid strategy gamer has taught me skills such as;
+            patience, paying attention to details, reacting to problems as they
+            emerge, and figuring out how to solve them. These skills have all
+            been of great use to me with my journey of learning so far.. And I
+            am still learning more and more every day, for I believe one should
+            never stop learning.
           </p>
         </div>
       </div>
