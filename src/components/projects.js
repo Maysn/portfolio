@@ -4,6 +4,7 @@ import list from "../assets/repo-list.png";
 import pokemon from "../assets/pokemon.png";
 import calculator from "../assets/calculator.png";
 import news from "../assets/news.png";
+import ecommerce from "../ass/ecommerce.jpg";
 export default function Projects(params) {
   return (
     <section id="Projects" className="projects">
@@ -12,7 +13,36 @@ export default function Projects(params) {
         <div className="project__grid">
           <div className="project__item">
             <figure className="figure">
-              <img src={pokemon} alt="Pokimane" />
+              <img src={ecommerce} alt="ecommerce" />
+              <figcaption>
+                <a
+                  href="https://github.com/Maysn/ecommerce-product-page"
+                  target="_blank"
+                >
+                  Github
+                </a>
+                <a
+                  href="https://majestic-ecommerce.netlify.app/"
+                  target="_blank"
+                >
+                  Live preview
+                </a>
+                <a
+                  href="https://www.frontendmentor.io/challenges/ecommerce-product-page-UPsZ9MJp6"
+                  target="_blank"
+                >
+                  Original design
+                </a>
+              </figcaption>
+            </figure>
+            <div className="project__desc">
+              <p>A Ecommerce store with cart functionality made using React.</p>
+            </div>
+          </div>
+
+          <div className="project__item">
+            <figure className="figure">
+              <img src={pokemon} alt="pokemon" />
               <figcaption>
                 <a href="https://github.com/Maysn/pokemon-app" target="_blank">
                   Github
