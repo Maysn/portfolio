@@ -4,7 +4,7 @@ import list from "../assets/repo-list.png";
 import pokemon from "../assets/pokemon.png";
 import calculator from "../assets/calculator.png";
 import news from "../assets/news.png";
-import ecommerce from "../ass/ecommerce.jpg";
+import ecommerce from "../assets/ecommerce.jpg";
 export default function Projects(params) {
   return (
     <section id="Projects" className="projects">
